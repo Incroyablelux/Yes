@@ -1,0 +1,454 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/LinearLayout2"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingRight="0dp"
+    tools:context=".Monnaie" >
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <ImageView
+            android:id="@+id/imageView20"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="30dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/fond" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/Time"
+                android:layout_width="wrap_content"
+                android:layout_height="35dp"
+                android:layout_gravity="right"
+                android:text=""
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textColor="#FF0000"
+                android:textSize="15sp" />
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <ImageView
+                    android:id="@+id/imageView14"
+                    android:layout_width="80dp"
+                    android:layout_height="45dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="59dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/uebis" />
+
+                <TableRow
+                    android:id="@+id/ligneEuro"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal" >
+
+                    <ImageView
+                        android:id="@+id/imageView1"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:layout_gravity="center_vertical"
+                        android:src="@drawable/ue" />
+
+                    <LinearLayout
+                        android:id="@+id/sigleEuro"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:orientation="vertical" >
+
+                        <TextView
+                            android:id="@+id/Euro"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:text="Euro"
+                            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+                        <TextView
+                            android:id="@+id/E"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:text="EUR"
+                            android:textAppearance="?android:attr/textAppearanceSmall" />
+                    </LinearLayout>
+
+                    <EditText
+                        android:id="@+id/valeurEuro"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right|center_vertical"
+                        android:layout_weight="1"
+                        android:ems="10"
+                        android:gravity="right"
+                        android:inputType="numberDecimal" />
+
+                    <ImageView
+                        android:id="@+id/imageView8"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_gravity="center_vertical"
+                        android:src="@drawable/e" />
+                </TableRow>
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <ImageView
+                    android:id="@+id/imageView15"
+                    android:layout_width="80dp"
+                    android:layout_height="45dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="55dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/usbis" />
+
+                <TableRow
+                    android:id="@+id/ligneDollar"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal" >
+
+                    <ImageView
+                        android:id="@+id/imageView2"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:layout_gravity="center_vertical"
+                        android:src="@drawable/us" />
+
+                    <LinearLayout
+                        android:id="@+id/sigleDollar"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:orientation="vertical" >
+
+                        <TextView
+                            android:id="@+id/Dollar"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Dollar"
+                            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+                        <TextView
+                            android:id="@+id/S"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:text="USD"
+                            android:textAppearance="?android:attr/textAppearanceSmall" />
+                    </LinearLayout>
+
+                    <EditText
+                        android:id="@+id/valeurDollar"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right|center_vertical"
+                        android:layout_weight="1"
+                        android:gravity="right"
+                        android:inputType="numberDecimal" />
+
+                    <ImageView
+                        android:id="@+id/imageView9"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_gravity="center_vertical"
+                        android:src="@drawable/s" />
+                </TableRow>
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <ImageView
+                    android:id="@+id/imageView16"
+                    android:layout_width="70dp"
+                    android:layout_height="39dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="60dp"
+                    android:layout_marginTop="1dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/jpbis" />
+
+                <TableRow
+                    android:id="@+id/ligneYen"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="fill_horizontal"
+                    android:orientation="horizontal" >
+
+                    <ImageView
+                        android:id="@+id/imageView3"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:layout_gravity="center_vertical"
+                        android:src="@drawable/jp" />
+
+                    <LinearLayout
+                        android:id="@+id/sigleYen"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:orientation="vertical" >
+
+                        <TextView
+                            android:id="@+id/Yen"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Yen"
+                            android:textColor="#000000"
+                            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+                        <TextView
+                            android:id="@+id/Y"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:text="JPY"
+                            android:textColor="#4D4D4D"
+                            android:textAppearance="?android:attr/textAppearanceSmall" />
+                    </LinearLayout>
+
+                    <EditText
+                        android:id="@+id/valeurYen"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right|center_vertical"
+                        android:layout_weight="1"
+                        android:gravity="right"
+                        android:inputType="numberDecimal" />
+
+                    <ImageView
+                        android:id="@+id/imageView10"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_gravity="center_vertical"
+                        android:src="@drawable/y" />
+                </TableRow>
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <ImageView
+                    android:id="@+id/imageView19"
+                    android:layout_width="80dp"
+                    android:layout_height="45dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="60dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/ukbis" />
+
+                <TableRow
+                    android:id="@+id/ligneLivre"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" >
+
+                    <ImageView
+                        android:id="@+id/imageView4"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:src="@drawable/uk" />
+
+                    <LinearLayout
+                        android:id="@+id/sigleLivre"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:orientation="vertical" >
+
+                        <TextView
+                            android:id="@+id/Livre"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Livre"
+                            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+                        <TextView
+                            android:id="@+id/L"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:text="LVL"
+                            android:textAppearance="?android:attr/textAppearanceSmall" />
+                    </LinearLayout>
+
+                    <EditText
+                        android:id="@+id/valeurLivre"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right|center_vertical"
+                        android:layout_weight="1"
+                        android:gravity="right"
+                        android:inputType="numberDecimal" />
+
+                    <ImageView
+                        android:id="@+id/imageView11"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_gravity="center_vertical"
+                        android:src="@drawable/l" />
+                </TableRow>
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <ImageView
+                    android:id="@+id/imageView18"
+                    android:layout_width="80dp"
+                    android:layout_height="39dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="58dp"
+                    android:layout_marginTop="1dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/chbis" />
+
+                <TableRow
+                    android:id="@+id/ligneYuan"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" >
+
+                    <ImageView
+                        android:id="@+id/imageView6"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:src="@drawable/ch" />
+
+                    <LinearLayout
+                        android:id="@+id/sigleYuan"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:orientation="vertical" >
+
+                        <TextView
+                            android:id="@+id/Yuan"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Yuan"
+                            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+                        <TextView
+                            android:id="@+id/Z"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:text="CNY"
+                            android:textAppearance="?android:attr/textAppearanceSmall" />
+                    </LinearLayout>
+
+                    <EditText
+                        android:id="@+id/valeurYuan"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right|center_vertical"
+                        android:layout_weight="1"
+                        android:ems="10"
+                        android:gravity="right"
+                        android:inputType="numberDecimal" />
+
+                    <ImageView
+                        android:id="@+id/imageView12"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_gravity="center_vertical"
+                        android:src="@drawable/z" />
+                </TableRow>
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <ImageView
+                    android:id="@+id/imageView17"
+                    android:layout_width="80dp"
+                    android:layout_height="45dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="58dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/rubis" />
+
+                <TableRow
+                    android:id="@+id/ligneRuble"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" >
+
+                    <ImageView
+                        android:id="@+id/imageView7"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:src="@drawable/ru" />
+
+                    <LinearLayout
+                        android:id="@+id/sigleRuble"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:orientation="vertical" >
+
+                        <TextView
+                            android:id="@+id/Ruble"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Ruble"
+                            android:textColor="#000000"
+                            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+                        <TextView
+                            android:id="@+id/P"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:text="RUB"
+                            android:textAppearance="?android:attr/textAppearanceSmall" />
+                    </LinearLayout>
+
+                    <EditText
+                        android:id="@+id/valeurRuble"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right|center_vertical"
+                        android:layout_weight="1"
+                        android:ems="10"
+                        android:gravity="right"
+                        android:inputType="numberDecimal" >
+
+                        <requestFocus />
+                    </EditText>
+
+                    <ImageView
+                        android:id="@+id/imageView13"
+                        android:layout_width="30dp"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/p" />
+                </TableRow>
+            </FrameLayout>
+        </LinearLayout>
+
+    </FrameLayout>
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/monnaie" />
+
+</LinearLayout>
